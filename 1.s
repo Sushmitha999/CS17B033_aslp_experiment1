@@ -30,9 +30,9 @@ main:
 	idiv	r12d ; eax <- [eax] - [r12d] ; eax <- 1
 	mov	DWORD PTR [rbp-20], eax ; [rbp -28] <- [eax]
 	mov	eax, 0 ;eax <- [ebx] ; eax <- 4
-	pop	rbx ;rbx <- stack[top-2] ;rbx=4
-	pop	r12; rbx <- stack[top-1];r12=4195296
-	pop	rbp ;rbp <- stack[top -0];rbp=0x7fffffffdd50
+	pop	rbx ;rbx <- stack[top-2]
+	pop	r12; rbx <- stack[top-1]
+	pop	rbp ;rbp <- stack[top -0]
 	.cfi_def_cfa 7, 8
 	ret
 	.cfi_endproc
